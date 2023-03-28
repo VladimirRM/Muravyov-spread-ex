@@ -31,10 +31,10 @@
 
 //////////delete el in arr////////
 const cars = [
-    {name: '', id: 1234},
-    {name: '', id: 1234},
-    {name: '', id: 1234},
-    {name: '', id: 1234},
-    {name: '', id: 1234},
-]
+  { name: "Nissan", id: 1234 },
+  { name: "Bmw", id: 1235 },
+  { name: "Toyota", id: 1256 },
+  { name: "Tractor", id: 1212 },
+  { name: "Lexus", id: 1574 },
+];
 
