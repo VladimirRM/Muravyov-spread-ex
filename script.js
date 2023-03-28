@@ -30,11 +30,17 @@
 // console.log(carTags);
 
 //////////delete el in arr////////
-const cars = [
-  { name: "Nissan", id: 1234 },
-  { name: "Bmw", id: 1235 },
-  { name: "Toyota", id: 1256 },
-  { name: "Tractor", id: 1212 },
-  { name: "Lexus", id: 1574 },
-];
+// const cars = [
+//   { name: "Nissan", id: 1234 },
+//   { name: "Bmw", id: 1235 },
+//   { name: "Toyota", id: 1256 },
+//   { name: "Tractor", id: 1212 },
+//   { name: "Lexus", id: 1574 },
+// ];
+// const objectId = 1212;
+// const indexId = cars.findIndex((car) => car.id === objectId);
+// console.log(indexId);
 
+// const carsNew = [...cars.slice(0, indexId), ...cars.slice(indexId + 1)];
+
+// console.log(carsNew);
