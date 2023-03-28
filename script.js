@@ -1,7 +1,7 @@
-const regular = ["Wv", "Scoda", "Audi"];
-const electric = ["Nissan", "Tesla", "Bmw"];
+// const regular = ["Wv", "Scoda", "Audi"];
+// const electric = ["Nissan", "Tesla", "Bmw"];
 
-const cars = [...regular, "Mercedes-benz", ...electric];
+// const cars = [...regular, "Mercedes-benz", ...electric];
 /////////1//////////
 // cars = cars.concat(regular);
 // cars.push("Mersedes-benz");
@@ -12,8 +12,22 @@ const cars = [...regular, "Mercedes-benz", ...electric];
 // /////////3/////////
 // console.log(cars);
 // console.log(carsNew);
+////////split str with spread /////
+// const word = "electric";
+// const letters = [...word];
 
-const word = "electric";
-const letters = [...word];
+// console.log(letters);
 
-console.log(letters);
+///////// get field in arr //////////
+// let car = {
+//   name: "Tesla",
+//   year: 2020,
+//   tags: ["fast", "new", "electric"],
+// };
+
+// const carTags = [...car.tags];
+
+// console.log(carTags);
+
+
+
