@@ -22,7 +22,6 @@
 // const { name, year = 2020 } = auto;
 // console.log(name, year);
 
-
 // //////////////////Get value properties//////////
 
 // const auto = ["Tesla", 2020,'Green']
@@ -39,8 +38,14 @@
 
 ////////////  /////////////////
 
-function  convertRubles(rubles){
-       
-} 
+function convertRubles(rubles) {
+  const complete = {
+    EUR: rubles * 80,
+    USD: rubles * 70,
+    GBP: rubles * 100,
+  };
+  return complete;
+}
 
-
+const { EUR, USD, GBP } = convertRubles(5000);
+console.log(EUR, USD, GBP );
