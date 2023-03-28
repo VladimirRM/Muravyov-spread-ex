@@ -1,11 +1,34 @@
-////////////rest////////////
+// const auto = {
+//   name: "Tesla",
+//   year: 2020,
+//   color: "red",
+//   dimensions: {
+//     size: {
+//       width: "1.99mm",
+//       length: "1,55mm",
+//     },
+//   },
+// };
 
-// function convertUsd(rate, ...totals) {
-//   console.log(rate, totals);
-//   return totals.map((total) => total / rate);
-// }
+// const { width, length } = auto.dimensions.size;
+// console.log(width, length);
 
-//  const total = convertUsd(70, 1000, 5000, 800);
 
-// console.log(total);
-const car = ["Tesla", 111, "red", 50000, "10%", "4Wd"];
+// ///////////2/////////////////////
+
+const auto = {
+  name: "Tesla",
+  year: 2020,
+  color: "red",
+  dimensions: {
+    size: {
+      width: "1.99mm",
+      length: "1,55mm",
+    },
+  },
+};
+
+const { width, length } = auto.dimensions.size;
+console.log(width, length);
+
+
