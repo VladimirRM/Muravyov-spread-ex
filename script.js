@@ -29,5 +29,12 @@
 
 // console.log(carTags);
 
-
+//////////delete el in arr////////
+const cars = [
+    {name: '', id: 1234},
+    {name: '', id: 1234},
+    {name: '', id: 1234},
+    {name: '', id: 1234},
+    {name: '', id: 1234},
+]
 
