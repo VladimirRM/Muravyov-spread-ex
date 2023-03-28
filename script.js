@@ -45,7 +45,20 @@
 
 // console.log(carsNew);
 //////////////adding el from arr to arr/////////
-const regular = ["Wv", "Scoda", "Audi"];
-const electric = ["Nissan", "Tesla", "Bmw"];
 
+// const regular = ["Wv", "Scoda", "Audi"];
+// const electric = ["Nissan", "Tesla", "Bmw"];
 
+// regular.push(...electric);
+
+// console.log(regular);
+
+//////////////render string //////////
+
+const car = ["Tesla", 2021];
+
+function displayCar(title, year) {
+  console.log(`auto ${title} - ${year} year`);
+}
+displayCar(...car);
+// displayCar(car[0], car[1]);///////
