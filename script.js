@@ -55,10 +55,10 @@
 
 //////////////render string //////////
 
-const car = ["Tesla", 2021];
+// const car = ["Tesla", 2021];
 
-function displayCar(title, year) {
-  console.log(`auto ${title} - ${year} year`);
-}
-displayCar(...car);
+// function displayCar(title, year) {
+//   console.log(`auto ${title} - ${year} year`);
+// }
+// displayCar(...car);
 // displayCar(car[0], car[1]);///////
