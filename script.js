@@ -1,7 +1,31 @@
-// function getTotal ({total,shipment = 0.1}){
-//   return total + total * shipment
-// }
+// let name = "Vasiliy";
+// let twoName = name;
+// name = "Stas";
 
-// const total = getTotal({shipment: 0.2, total: 1000})
+// console.log(name);
+// console.log(twoName);
 
-// console.log(total);
+// let age = 10;
+// let ageTwo = 15;
+// age = 25;
+
+// console.log(age);
+// console.log(ageTwo);
+
+////////////////////insert in array/////////
+
+// let students = ["Ivan", "Petro ", "vasiliy"];
+
+// const group = students;
+
+// group[2] = "Yanina";
+
+// console.log(students);
+// console.log(group);
+///////////// copy use any method///////////////
+/////////////slice copy el in arr////////////
+// let students = ["Ivan", "Petro ", "vasiliy"];
+
+// const group2 = students.slice(0, 2);
+// console.log(students);
+// console.log(group2);
