@@ -13,16 +13,11 @@
 // const { width, length } = auto.dimensions.size;
 // console.log(width, length);
 
-
-// ///////////2/////////////////////
+// ///////////Get value default/////////////////////
 
 const auto = {
   name: "Tesla",
-  year: 2020,
+};
 
-}
-
-const {  } = auto
-console.log(width, length);
-
-
+const { name, year = 2020 } = auto;
+console.log(name, year);
