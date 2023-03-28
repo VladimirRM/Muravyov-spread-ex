@@ -1,64 +1,10 @@
-// const regular = ["Wv", "Scoda", "Audi"];
-// const electric = ["Nissan", "Tesla", "Bmw"];
+////////////rest////////////
 
-// const cars = [...regular, "Mercedes-benz", ...electric];
-/////////1//////////
-// cars = cars.concat(regular);
-// cars.push("Mersedes-benz");
-// cars = cars.concat(electric);
-/////////2///////
-// const carsNew = [...cars];
-// carsNew[0] = "Motorcycle";
-// /////////3/////////
-// console.log(cars);
-// console.log(carsNew);
-////////split str with spread /////
-// const word = "electric";
-// const letters = [...word];
+function convertUsd(rate, ...totals) {
+  console.log(rate, totals);
+  return totals.map((total) => total / rate);
+}
 
-// console.log(letters);
+ const total = convertUsd(70, 1000, 5000, 800);
 
-///////// get field in arr //////////
-// let car = {
-//   name: "Tesla",
-//   year: 2020,
-//   tags: ["fast", "new", "electric"],
-// };
-
-// const carTags = [...car.tags];
-
-// console.log(carTags);
-
-//////////delete el in arr////////
-// const cars = [
-//   { name: "Nissan", id: 1234 },
-//   { name: "Bmw", id: 1235 },
-//   { name: "Toyota", id: 1256 },
-//   { name: "Tractor", id: 1212 },
-//   { name: "Lexus", id: 1574 },
-// ];
-// const objectId = 1212;
-// const indexId = cars.findIndex((car) => car.id === objectId);
-// console.log(indexId);
-
-// const carsNew = [...cars.slice(0, indexId), ...cars.slice(indexId + 1)];
-
-// console.log(carsNew);
-//////////////adding el from arr to arr/////////
-
-// const regular = ["Wv", "Scoda", "Audi"];
-// const electric = ["Nissan", "Tesla", "Bmw"];
-
-// regular.push(...electric);
-
-// console.log(regular);
-
-//////////////render string //////////
-
-// const car = ["Tesla", 2021];
-
-// function displayCar(title, year) {
-//   console.log(`auto ${title} - ${year} year`);
-// }
-// displayCar(...car);
-// displayCar(car[0], car[1]);///////
+console.log(total);
