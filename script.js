@@ -19,16 +19,10 @@
 const auto = {
   name: "Tesla",
   year: 2020,
-  color: "red",
-  dimensions: {
-    size: {
-      width: "1.99mm",
-      length: "1,55mm",
-    },
-  },
-};
 
-const { width, length } = auto.dimensions.size;
+}
+
+const {  } = auto
 console.log(width, length);
 
 
