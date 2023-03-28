@@ -44,3 +44,8 @@
 // const carsNew = [...cars.slice(0, indexId), ...cars.slice(indexId + 1)];
 
 // console.log(carsNew);
+//////////////adding el from arr to arr/////////
+const regular = ["Wv", "Scoda", "Audi"];
+const electric = ["Nissan", "Tesla", "Bmw"];
+
+
