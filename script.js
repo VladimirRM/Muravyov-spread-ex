@@ -15,9 +15,17 @@
 
 // ///////////Get value default/////////////////////
 
-const auto = {
-  name: "Tesla",
-};
+// const auto = {
+//   name: "Tesla",
+// };
 
-const { name, year = 2020 } = auto;
-console.log(name, year);
+// const { name, year = 2020 } = auto;
+// console.log(name, year);
+
+
+// //////////////////Get value properties//////////
+
+// const auto = ["Tesla", 2020,'Green']
+
+// const [name, year, color] = auto
+// console.log(name, year, color);
