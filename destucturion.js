@@ -29,18 +29,16 @@
 // const [name, year, color] = auto
 // console.log(name, year, color);
 
-const auto = ["Tesla", 2020, "Green"];
 
-const [name, year, color] = auto;
-
-console.log(name, year, color);
 
 //////////////  /////////////////
 
-// const auto = 'Tesla, 2020,Green'
+const auto = 'Tesla, 2020,Green'
 
 // const [name, year, color] = auto.split(',')
 // console.log(name, year, color);
+const [name, year, color] = auto.split(',')
+console.log(name, year, color);
 
 ////////////  /////////////////
 
