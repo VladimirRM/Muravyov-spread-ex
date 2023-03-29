@@ -29,16 +29,12 @@
 // const [name, year, color] = auto
 // console.log(name, year, color);
 
-
-
 //////////////  /////////////////
 
-const auto = 'Tesla, 2020,Green'
+// const auto = 'Tesla, 2020,Green'
 
 // const [name, year, color] = auto.split(',')
 // console.log(name, year, color);
-const [name, year, color] = auto.split(',')
-console.log(name, year, color);
 
 ////////////  /////////////////
 
@@ -53,6 +49,17 @@ console.log(name, year, color);
 
 // const { EUR, USD, GBP } = convertRubles(5000);
 // console.log(EUR, USD, GBP );
+
+function convert(grn) {
+  const complete = {
+    USD: grn * 42,
+    EUR: grn * 42,
+  };
+  return complete;
+}
+
+const { USD, EUR } = convert(100);
+console.log(USD, EUR);
 
 // const auto = {
 //   name: "Tesla",
