@@ -1,3 +1,5 @@
+
+//////////Assign new properties in arr & obj //////
 // let name = "Vasiliy";
 // let twoName = name;
 // name = "Stas";
@@ -52,8 +54,4 @@
 // const group = Array.from(students);
 // console.log(group);
 
-let students = ["Ivan", "Petro ", "vasiliy"];
 
-const group = Array.from(students);
-
-console.log(group);
