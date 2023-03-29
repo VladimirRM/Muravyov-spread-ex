@@ -1,17 +1,17 @@
-// const regular = ["Wv", "Scoda", "Audi"];
-// const electric = ["Nissan", "Tesla", "Bmw"];
+const regular = ["Wv", "Scoda", "Audi"];
+const electric = ["Nissan", "Tesla", "Bmw"];
 
 // const cars = [...regular, "Mercedes-benz", ...electric];
+const cars = [...regular, "Mercedes", ...electric];
+console.log(cars);
 /////////1//////////
 // cars = cars.concat(regular);
 // cars.push("Mersedes-benz");
 // cars = cars.concat(electric);
 /////////2///////
 
-
 // const carsNew = [...cars];
 // carsNew[0] = "Motorcycle";
-
 
 // /////////3/////////
 

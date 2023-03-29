@@ -33,11 +33,7 @@
 // group2[2] = "ivan";
 // console.log(students);
 // console.log(group2);
-let students = ["Ivan", "Petro ", "vasiliy"];
 
-const group = students.splice();
-
-console.log(group);
 
 // ////////////////////copy use concat //////////////////////
 

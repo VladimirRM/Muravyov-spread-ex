@@ -1,4 +1,4 @@
-// //////////////Object assign add properties in obj/////////
+// //////////////Object assign  properties in obj/////////
 
 // // const person = {
 // //     name: "Piter",
@@ -24,7 +24,6 @@
 //  const fireMan = Object.assign({}, person,{age: 38,height:'1.8m'})
 // console.log(person);
 // console.log(fireMan);
-
 
 // const worker = { ...person };
 
