@@ -8,4 +8,9 @@ student.age = 100;
 
  const fireMan = Object.assign({}, person,{age: 38,height:'1.8m'})
 console.log(person);
-console.log(student);
+console.log(fireMan);
+
+
+const worker = { ...person };
+
+console.log(worker);

@@ -101,7 +101,16 @@
 
 // const { EUR, USD, GBP } = convertRubles(5000);
 // console.log(EUR, USD, GBP );
+function converting (){
+    let complete = {
+        EUR: grn * 40,
+        USD: grn * 42,
+    }
 
+    return complete 
+}
+const { USD , EUR} = converting
+console.log(converting);
 
 // function getTotal ({total,shipment = 0.1}){
     //   return total + total * shipment
