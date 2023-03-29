@@ -7,9 +7,14 @@
 // cars.push("Mersedes-benz");
 // cars = cars.concat(electric);
 /////////2///////
+
+
 // const carsNew = [...cars];
 // carsNew[0] = "Motorcycle";
+
+
 // /////////3/////////
+
 // console.log(cars);
 // console.log(carsNew);
 ////////split str with spread /////
