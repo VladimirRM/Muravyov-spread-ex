@@ -22,18 +22,18 @@
 // const { name, year = 2020 } = auto;
 // console.log(name, year);
 
-const auto = {
-  name: "tesla",
-};
-const { name, year = 2020 } = auto;
-console.log(name, year);
-
 // //////////////////Get value properties//////////
 
 // const auto = ["Tesla", 2020,'Green']
 
 // const [name, year, color] = auto
 // console.log(name, year, color);
+
+const auto = ["Tesla", 2020, "Green"];
+
+const [name, year, color] = auto;
+
+console.log(name, year, color);
 
 //////////////  /////////////////
 
