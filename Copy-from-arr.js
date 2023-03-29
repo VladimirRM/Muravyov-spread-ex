@@ -1,4 +1,3 @@
-
 //////////Assign new properties in arr & obj //////
 // let name = "Vasiliy";
 // let twoName = name;
@@ -24,6 +23,12 @@
 
 // console.log(students);
 // console.log(group);
+
+let students = ["Ivan", "Petro ", "vasiliy"];
+
+const group = students;
+group[2] = "Ivanka";
+console.log(group);
 ///////////// copy use any method///////////////
 
 /////////////slice copy el in arr////////////
@@ -53,5 +58,3 @@
 
 // const group = Array.from(students);
 // console.log(group);
-
-
