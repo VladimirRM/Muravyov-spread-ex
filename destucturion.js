@@ -1,18 +1,15 @@
-const auto = {
-  name: "Tesla",
-  year: 2020,
-  color: "red",
-  dimensions: {
-    size: {
-      width: "1.99mm",
-      length: "1,55mm",
-    },
-  },
-};
+// const auto = {
+//   name: "Tesla",
+//   year: 2020,
+//   color: "red",
+//   dimensions: {
+//     size: {
+//       width: "1.99mm",
+//       length: "1,55mm",
+//     },
+//   },
+// };
 
-
-const { name, year} = auto
-console.log(name, year);
 // const { width, length } = auto.dimensions.size;
 // console.log(width, length);
 
@@ -24,6 +21,12 @@ console.log(name, year);
 
 // const { name, year = 2020 } = auto;
 // console.log(name, year);
+
+const auto = {
+  name: "tesla",
+};
+const { name, year = 2020 } = auto;
+console.log(name, year);
 
 // //////////////////Get value properties//////////
 
@@ -104,7 +107,6 @@ console.log(name, year);
 
 // const { EUR, USD, GBP } = convertRubles(5000);
 // console.log(EUR, USD, GBP );
-
 
 // function getTotal ({total,shipment = 0.1}){
 //   return total + total * shipment
