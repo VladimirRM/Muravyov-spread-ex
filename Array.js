@@ -24,7 +24,6 @@
 // console.log(group);
 ///////////// copy use any method///////////////
 
-
 /////////////slice copy el in arr////////////
 // let students = ["Ivan", "Petro ", "vasiliy"];
 
@@ -45,6 +44,12 @@
 
 // const group = [...students];
 // console.log(group);
+
+let students = ["Ivan", "Petro ", "vasiliy"];
+
+let group = [...students];
+console.log(group);
+
 
 //////////copy using Array from ////////
 
