@@ -24,11 +24,6 @@
 // console.log(students);
 // console.log(group);
 
-let students = ["Ivan", "Petro ", "vasiliy"];
-
-const group = students;
-group[2] = "Ivanka";
-console.log(group);
 ///////////// copy use any method///////////////
 
 /////////////slice copy el in arr////////////
@@ -38,6 +33,11 @@ console.log(group);
 // group2[2] = "ivan";
 // console.log(students);
 // console.log(group2);
+let students = ["Ivan", "Petro ", "vasiliy"];
+
+const group = students.splice();
+
+console.log(group);
 
 // ////////////////////copy use concat //////////////////////
 
