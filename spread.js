@@ -1,23 +1,17 @@
-const regular = ["Wv", "Scoda", "Audi"];
-const electric = ["Nissan", "Tesla", "Bmw"];
+/////////get copy arr and add new el/////////
+// const regular = ["Wv", "Scoda", "Audi"];
+// const electric = ["Nissan", "Tesla", "Bmw"];
 
 // const cars = [...regular, "Mercedes-benz", ...electric];
-const cars = [...regular, "Mercedes", ...electric];
-console.log(cars);
-/////////1//////////
-// cars = cars.concat(regular);
-// cars.push("Mersedes-benz");
-// cars = cars.concat(electric);
-/////////2///////
+
+// //////////// get copy arr and add new el use index/////
+// const cars = ["Wv", "Scoda", "Audi"];
 
 // const carsNew = [...cars];
 // carsNew[0] = "Motorcycle";
 
-// /////////3/////////
+////////split str using spread /////
 
-// console.log(cars);
-// console.log(carsNew);
-////////split str with spread /////
 // const word = "electric";
 // const letters = [...word];
 
@@ -49,12 +43,13 @@ console.log(cars);
 // const carsNew = [...cars.slice(0, indexId), ...cars.slice(indexId + 1)];
 
 // console.log(carsNew);
-//////////////adding el from arr to arr/////////
+//////////////add array to array as element/////////
 
 // const regular = ["Wv", "Scoda", "Audi"];
 // const electric = ["Nissan", "Tesla", "Bmw"];
 
-// regular.push(...electric);
+// regular.push(electric);
+// console.log(regular);
 
 // console.log(regular);
 
