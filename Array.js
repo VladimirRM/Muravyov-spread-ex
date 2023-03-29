@@ -45,15 +45,15 @@
 // const group = [...students];
 // console.log(group);
 
-let students = ["Ivan", "Petro ", "vasiliy"];
-
-let group = [...students];
-console.log(group);
-
-
 //////////copy using Array from ////////
 
 // let students = ["Ivan", "Petro ", "vasiliy"];
 
 // const group = Array.from(students);
 // console.log(group);
+
+let students = ["Ivan", "Petro ", "vasiliy"];
+
+const group = Array.from(students);
+
+console.log(group);
