@@ -63,10 +63,4 @@
 // displayCar(...car);
 // displayCar(car[0], car[1]);///////
 
-const car = ["Tesla", 2021];
 
-function displayCar(title, year) {
-  console.log(`Auto ${title} - ${year}`);
-}
-displayCar(...car);
-displayCar(car[0], car[1]);
