@@ -18,22 +18,39 @@
 
 ////////////////////second render ///////////
 
-const cars = [
-  {
-    name: "Tesla",
-    year: 2010,
-  },
-  {
-    name: "Nissan",
-    year: 2012,
-  },
-];
+// const cars = [
+//   {
+//     name: "Tesla",
+//     year: 2010,
+//   },
+//   {
+//     name: "Nissan",
+//     year: 2012,
+//   },
+// ];
+
+// const html = `
+// <ul>
+// ${cars.map((car) => `${car.name} ${car.year}`).join(" ")}
+// </ul>
+// `;
+
+// document.body.innerHTML = html;
+// console.log(html);
+
+///////////////three method ////////////
+
+const car = {
+  name: "Tesla",
+  year: 2010,
+  info: "Super modern auto",
+};
 
 const html = `
-<ul>
-${cars.map((car) => `${car.name} ${car.year}`).join(" ")}
-</ul>
-`;
+<div>
+<p>${car.name}</p>
+<p>${car.year}</p>
+${car.info ? `Information: ${car.info}` : ""}
+</div>`;
 
 document.body.innerHTML = html;
-console.log(html);
