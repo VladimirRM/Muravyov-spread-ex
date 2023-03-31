@@ -1,16 +1,9 @@
 /////////////first method /////////
 
-const car = {
-  name: "Tesla",
-  year: 2010,
-};
-
-const html = `
-   <div>${car.name}</div>
-   <div>${car.year}</div>
-`;
-
-document.body.innerHTML = html;
+// const car = {
+//   name: "Tesla",
+//   year: 2010,
+// };
 
 // const html = `
 
@@ -25,16 +18,25 @@ document.body.innerHTML = html;
 
 ////////////////////second render ///////////
 
-// const cars = [
-//   {
-//     name: "Tesla",
-//     year: 2010,
-//   },
-//   {
-//     name: "Nissan",
-//     year: 2012,
-//   },
-// ];
+const cars = [
+  {
+    name: "Tesla",
+    year: 2010,
+  },
+  {
+    name: "Nissan",
+    year: 2012,
+  },
+];
+
+const html = `
+<ul>
+   ${cars.map((car) => `${car.name} ${car.year}`)}
+</ul>
+
+`;
+
+document.body.innerHTML = html;
 
 // const html = `
 // <ul>
