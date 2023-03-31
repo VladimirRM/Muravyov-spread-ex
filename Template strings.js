@@ -18,25 +18,16 @@
 
 ////////////////////second render ///////////
 
-const cars = [
-  {
-    name: "Tesla",
-    year: 2010,
-  },
-  {
-    name: "Nissan",
-    year: 2012,
-  },
-];
-
-const html = `
-<ul>
-   ${cars.map((car) => `${car.name} ${car.year}`)}
-</ul>
-
-`;
-
-document.body.innerHTML = html;
+// const cars = [
+//   {
+//     name: "Tesla",
+//     year: 2010,
+//   },
+//   {
+//     name: "Nissan",
+//     year: 2012,
+//   },
+// ];
 
 // const html = `
 // <ul>
@@ -64,13 +55,29 @@ document.body.innerHTML = html;
 
 // document.body.innerHTML = html;
 
-/////////////Cond ren 2////////////////////
+/////////////Rendering tags////////////////////
 
-// const car = {
-//   name: "Tesla",
-//   year: 2010,
-//   tags: ["electric", "modern", "fast"],
-// };
+const cars = {
+  name: "Tesla",
+  year: 2010,
+  tags: ["electric", "modern", "fast"],
+};
+
+const renderTags = (tags) => {
+  return `
+     <ul>
+       ${tags.map((tag) => `<li>${tag}</li> `)}
+     </ul>
+    `;
+};
+
+const html = `
+      <div>${cars.name}</div>
+      <div>${cars.year}</div>
+      <div>${renderTags(cars.tags)}</div>
+`;
+
+document.body.innerHTML = html;
 
 // const renderTags = (tags) => {
 //   return `
