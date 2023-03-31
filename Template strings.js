@@ -1,9 +1,16 @@
 /////////////first method /////////
 
-// const car = {
-//   name: "Tesla",
-//   year: 2010,
-// };
+const car = {
+  name: "Tesla",
+  year: 2010,
+};
+
+const html = `
+   <div>${car.name}</div>
+   <div>${car.year}</div>
+`;
+
+document.body.innerHTML = html;
 
 // const html = `
 
@@ -57,25 +64,25 @@
 
 /////////////Cond ren 2////////////////////
 
-const car = {
-  name: "Tesla",
-  year: 2010,
-  tags: ["electric", "modern", "fast"],
-};
+// const car = {
+//   name: "Tesla",
+//   year: 2010,
+//   tags: ["electric", "modern", "fast"],
+// };
 
-const renderTags = (tags) => {
-  return ` 
-    <ul>
-    ${tags.map((tag) => ` <li>${tag}</li>  `).join(' ')}
-    </ul>
-    `;
-};
+// const renderTags = (tags) => {
+//   return `
+//     <ul>
+//     ${tags.map((tag) => ` <li>${tag}</li>  `).join(' ')}
+//     </ul>
+//     `;
+// };
 
-const html = `
-    <div>
-    <p>${car.name}</p>
-    <p>${car.year}</p>
-    ${renderTags(car.tags)}
-    </div>`;
+// const html = `
+//     <div>
+//     <p>${car.name}</p>
+//     <p>${car.year}</p>
+//     ${renderTags(car.tags)}
+//     </div>`;
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
