@@ -38,19 +38,40 @@
 // document.body.innerHTML = html;
 // console.log(html);
 
-///////////////three method ////////////
+///////////////Conditional rendering  ////////////
+
+// const car = {
+//   name: "Tesla",
+//   year: 2010,
+//   info: "Super modern auto",
+// };
+
+// const html = `
+// <div>
+// <p>${car.name}</p>
+// <p>${car.year}</p>
+// ${car.info ? `Information: ${car.info}` : ""}
+// </div>`;
+
+// document.body.innerHTML = html;
+
+/////////////Cond ren 2////////////////////
 
 const car = {
   name: "Tesla",
   year: 2010,
-  info: "Super modern auto",
+  tags: ["electric", "modern", "fast"],
 };
 
+const renderTags = (tags)=>{
+    
+}
+
 const html = `
-<div>
-<p>${car.name}</p>
-<p>${car.year}</p>
-${car.info ? `Information: ${car.info}` : ""}
-</div>`;
+    <div>
+    <p>${car.name}</p>
+    <p>${car.year}</p>
+    ${car.info ? `Information: ${car.info}` : ""}
+    </div>`;
 
 document.body.innerHTML = html;
