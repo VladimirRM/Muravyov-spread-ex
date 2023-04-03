@@ -7,9 +7,15 @@
 //   });
 
 const coffee = new Promise((resolve, reject) => {
-  resolve("you coffee is good");
+  setTimeout(() => {
+    reject("you coffee is good");
+  }, 1500);
 });
 
-coffee.then((data) => {
-  console.log(data);
-});
+coffee
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log("Err");
+  });
