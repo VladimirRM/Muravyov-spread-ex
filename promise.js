@@ -5,3 +5,6 @@
 //   .catch(err =>{
 //     console.log('Error');
 //   });
+
+
+const coffee = new Promise((resolve, reject))
