@@ -6,5 +6,10 @@
 //     console.log('Error');
 //   });
 
+const coffee = new Promise((resolve, reject) => {
+  resolve("you coffee is good");
+});
 
-const coffee = new Promise((resolve, reject))
+coffee.then((data) => {
+  console.log(data);
+});
