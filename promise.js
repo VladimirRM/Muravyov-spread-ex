@@ -21,16 +21,23 @@
 //   });
 
 const family = [
-    { member: "Mom", id: 111, coffee: "Latte" },
-    { member: "Father", id: 222, coffee: "Espresso" },
-    { member: "Sun", id: 333, coffee: "Cappucino" },
-
+  { member: "Mom", id: 111, coffee: "Latte" },
+  { member: "Father", id: 222, coffee: "Espresso" },
+  { member: "Sun", id: 333, coffee: "Cappucino" },
 ];
 
-const getFamilyMember = (id)=>{
-     return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
+const getFamilyMember = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const member = family.find((res => res.id === id));
+      console.log(member);
+      if (member) {
+        resolve(member);
+      } else {
+        reject(Error("  don,t find "));
+      }
+    }, 1500);
+  });
+};
 
-        },1500)
-     })
-}
+getFamilyMember(000);
