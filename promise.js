@@ -29,7 +29,7 @@ const family = [
 const getFamilyMember = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const member = family.find((res => res.id === id));
+      const member = family.find((res) => res.id === id);
       console.log(member);
       if (member) {
         resolve(member);
@@ -40,4 +40,6 @@ const getFamilyMember = (id) => {
   });
 };
 
-getFamilyMember(000);
+getFamilyMember(111).then((data) => {
+  console.log(data);
+});
