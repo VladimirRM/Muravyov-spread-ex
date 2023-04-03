@@ -57,27 +57,11 @@
 
 /////////////Rendering tags////////////////////
 
-const cars = {
-  name: "Tesla",
-  year: 2010,
-  tags: ["electric", "modern", "fast"],
-};
-
-const renderTags = (tags) => {
-  return `
-     <ul>
-       ${tags.map((tag) => `<li>${tag}</li> `)}
-     </ul>
-    `;
-};
-
-const html = `
-      <div>${cars.name}</div>
-      <div>${cars.year}</div>
-      <div>${renderTags(cars.tags)}</div>
-`;
-
-document.body.innerHTML = html;
+// const cars = {
+//   name: "Tesla",
+//   year: 2010,
+//   tags: ["electric", "modern", "fast"],
+// };
 
 // const renderTags = (tags) => {
 //   return `
