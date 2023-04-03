@@ -6,16 +6,16 @@
 //     console.log('Error');
 //   });
 
-const coffee = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject("you coffee is good");
-  }, 1500);
-});
+// const coffee = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject(Error("you coffee is good"));
+//   }, 1500);
+// });
 
-coffee
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.log("Err");
-  });
+// coffee
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log("Err");
+//   });
