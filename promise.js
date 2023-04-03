@@ -51,4 +51,5 @@ const getFamilyMember = (id) => {
 
 getFamilyMember(111).then((data) => {
   console.log(data);
+  getCoffee(data);
 });
