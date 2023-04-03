@@ -26,6 +26,15 @@ const family = [
   { member: "Sun", id: 333, coffee: "Cappucino" },
 ];
 
+const getCoffee = (member) => {
+  const coffeePromise = fetch("https://api.sampleapis.com/coffee/hot");
+  return coffeePromise
+    .then((data) => data.json())
+    .then((list) => {
+      console.log("list >>>", list);
+    });
+};
+
 const getFamilyMember = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
