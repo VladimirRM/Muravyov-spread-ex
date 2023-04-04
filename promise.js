@@ -26,31 +26,6 @@ const family = [
   { member: "Sun", id: 333, coffee: "Cappucino" },
 ];
 
-const getCoffee = (member) => {
-  const coffeePromise = fetch("https://api.sampleapis.com/coffee/hot");
-  return coffeePromise
-    .then((data) => data.json())
-    .then((list) => {
-      const coffee = list.find(res => res.title === member.coffee);
-      console.log(coffee);
-    });
-};
 
-const getFamilyMember = (id) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const member = family.find((res) => res.id === id);
-      console.log(member);
-      if (member) {
-        resolve(member);
-      } else {
-        reject(Error("  don,t find "));
-      }
-    }, 1500);
-  });
-};
 
-getFamilyMember(111).then((data) => {
-  console.log(data);
-  getCoffee(data);
-});
+
