@@ -27,7 +27,7 @@ const family = [
 ];
 
 const getCoffee = (member) => {
-    const coffeePromise = 
+  const coffeePromise = fetch("https://api.sampleapis.com/coffee/hot");
 };
 
 const getFamilyMember = (id) => {
