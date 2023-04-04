@@ -80,4 +80,5 @@ const makeToast = () => {
   });
 };
 
-const coffeePromise = makeCoffee
+const coffeePromise = makeCoffee;
+const toastPromise = makeToast;
