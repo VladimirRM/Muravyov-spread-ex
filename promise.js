@@ -40,4 +40,6 @@ const getFamilyMember = (id) => {
   });
 };
 
-getFamilyMember(000);
+getFamilyMember(111).then((data)=>{
+    console.log(data)
+});
