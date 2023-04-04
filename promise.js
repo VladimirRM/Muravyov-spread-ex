@@ -39,6 +39,7 @@
 //       };
 //     });
 // };
+/////////////////  /////////////////////////
 
 // const getFamilyMember = (id) => {
 //   return new Promise((resolve, reject) => {
@@ -89,11 +90,32 @@
 //   }
 // );
 
-const beerPromise = fetch("https://api.sampleapis.com/beers/ale");
-const winePromise = fetch("https://api.sampleapis.com/wines/reds");
+/////////////////// ////////////////////////
 
-Promise.all([beerPromise, winePromise]).then((data) => {
-  return Promise.all(data.map((res) => res.json())).then((finalData) => {
-    console.log(finalData);
-  });
-});
+// const beerPromise = fetch("https://api.sampleapis.com/beers/ale");
+// const winePromise = fetch("https://api.sampleapis.com/wines/reds");
+
+// Promise.all([beerPromise, winePromise])
+// .then((data) => {
+//    Promise.all(data.map((res) => res.json()))
+// .then((finalData) => {
+//     console.log(finalData);
+//   });
+// });
+
+///////////////   ////////////////////////
+
+// const p = new Promise((resolve, reject) => {
+//   console.log("SetTimeout started");
+
+//   setTimeout(() => {
+//     console.log("SetTimeout ended");
+//     reject({ status: "no" });
+//   }, 500);
+// });
+
+// p.then((data) => {
+//   console.log(data);
+// })
+//   .catch((error) => console.error(error))
+//   .finally(() => console.log("finally"));
