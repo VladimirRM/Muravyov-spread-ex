@@ -28,6 +28,11 @@ const family = [
 
 const getCoffee = (member) => {
   const coffeePromise = fetch("https://api.sampleapis.com/coffee/hot");
+  return coffeePromise
+    .then((data) => data.json())
+    .then((list) => {
+      console.log("list >>>", list);
+    });
 };
 
 const getFamilyMember = (id) => {
@@ -46,4 +51,5 @@ const getFamilyMember = (id) => {
 
 getFamilyMember(111).then((data) => {
   console.log(data);
+  getCoffee(data);
 });
