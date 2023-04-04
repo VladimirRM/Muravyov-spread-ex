@@ -93,5 +93,7 @@ const beerPromise = fetch("https://api.sampleapis.com/beers/ale");
 const winePromise = fetch("https://api.sampleapis.com/wines/reds");
 
 Promise.all([beerPromise, winePromise]).then((data) => {
-  console.log(data);
+  return Promise.all(data.map((res) => res.json())).then((finalData) => {
+    console.log(finalData);
+  });
 });
