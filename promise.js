@@ -119,3 +119,15 @@
 // })
 //   .catch((error) => console.error(error))
 //   .finally(() => console.log("finally"));
+
+
+////////////////   /////////////////////////
+
+const delay = (ms)=>{
+    return new Promise((resolve,reject)=>{
+         setTimeout(()=>{
+            resolve()
+         },ms)
+    })
+}
+delay(2000).then(()=>console.log('After 2000'))
