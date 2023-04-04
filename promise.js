@@ -28,8 +28,16 @@ const family = [
 
 const getFamilyMember = (id) => {
   return new Promise((resolve, reject) => {
-    setTimeout(()=>{
-     
-    },1500)
+    setTimeout(() => {
+      const member = family.find((res) => res.id === id);
+      console.log(member);
+      if (member) {
+        resolve(member);
+      } else {
+        reject(Error("member not found"));
+      }
+    }, 1500);
   });
 };
+
+getFamilyMember(111)
