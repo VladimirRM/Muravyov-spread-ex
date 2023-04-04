@@ -65,26 +65,28 @@
 
 ///////////// ///////////////////
 
-const makeCoffee = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Take your coffee");
-    }, 500);
-  });
-};
-const makeToast = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Take your toast");
-    }, 2500);
-  });
-};
+// const makeCoffee = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Take your coffee");
+//     }, 500);
+//   });
+// };
+// const makeToast = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Take your toast");
+//     }, 2500);
+//   });
+// };
 
-const coffeePromise = makeCoffee();
-const toastPromise = makeToast();
+// const coffeePromise = makeCoffee();
+// const toastPromise = makeToast();
 
-Promise.all([coffeePromise, toastPromise]).then(
-  ([coffeePromise, toastPromise]) => {
-    console.log(coffeePromise, toastPromise);
-  }
-);
+// Promise.all([coffeePromise, toastPromise]).then(
+//   ([coffeePromise, toastPromise]) => {
+//     console.log(coffeePromise, toastPromise);
+//   }
+// );
+
+const beerPromise = fetch('https://api.sampleapis.com/beers/ale')
