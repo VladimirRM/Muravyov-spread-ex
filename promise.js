@@ -26,6 +26,10 @@ const family = [
   { member: "Sun", id: 333, coffee: "Cappucino" },
 ];
 
-
-
-
+const getFamilyMember = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+     
+    },1500)
+  });
+};
