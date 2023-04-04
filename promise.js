@@ -83,9 +83,8 @@ const makeToast = () => {
 const coffeePromise = makeCoffee();
 const toastPromise = makeToast();
 
-coffeePromise.then((data) => {
-  console.log(data);
-});
-toastPromise.then((data) => {
-  console.log(data);
-});
+Promise.all([coffeePromise, toastPromise]).then(
+  ([coffeePromise, toastPromise]) => {
+    console.log(coffeePromise, toastPromise);
+  }
+);
