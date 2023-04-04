@@ -68,17 +68,24 @@
 const makeCoffee = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("Take your coffee");
+      resolve("Take your coffee");
     }, 500);
   });
 };
 const makeToast = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("Take your toast");
+      resolve("Take your toast");
     }, 2500);
   });
 };
 
-const coffeePromise = makeCoffee;
-const toastPromise = makeToast;
+const coffeePromise = makeCoffee();
+const toastPromise = makeToast();
+
+coffeePromise.then((data) => {
+  console.log(data);
+});
+toastPromise.then((data) => {
+  console.log(data);
+});
