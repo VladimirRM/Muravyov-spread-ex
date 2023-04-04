@@ -31,7 +31,8 @@ const getCoffee = (member) => {
   return coffeePromise
     .then((data) => data.json())
     .then((list) => {
-      console.log("list >>>", list);
+      const coffee = list.find(res => res.title === member.coffee);
+      console.log(coffee);
     });
 };
 
