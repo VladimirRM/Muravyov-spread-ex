@@ -69,6 +69,15 @@
 
 const makeCoffee = ()=>{
     return new Promise((resolve,reject)=>{
-        
+        setTimeout(()=>{
+console.log("Take your coffee");
+        },500)
+    })
+}
+const makeToast = ()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+console.log("Take your coffee");
+        },500)
     })
 }
