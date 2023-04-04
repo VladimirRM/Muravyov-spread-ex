@@ -63,21 +63,21 @@
 //     console.log(err);
 //   });
 
-
 ///////////// ///////////////////
 
+const makeCoffee = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Take your coffee");
+    }, 500);
+  });
+};
+const makeToast = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Take your toast");
+    }, 2500);
+  });
+};
 
-const makeCoffee = ()=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-console.log("Take your coffee");
-        },500)
-    })
-}
-const makeToast = ()=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-console.log("Take your coffee");
-        },500)
-    })
-}
+const coffeePromise = makeCoffee
