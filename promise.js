@@ -26,6 +26,10 @@ const family = [
   { member: "Sun", id: 333, coffee: "Cappucino" },
 ];
 
+const getCoffee = (member) => {
+    const coffeePromise = 
+};
+
 const getFamilyMember = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -40,6 +44,6 @@ const getFamilyMember = (id) => {
   });
 };
 
-getFamilyMember(111).then((data)=>{
-    console.log(data)
+getFamilyMember(111).then((data) => {
+  console.log(data);
 });
